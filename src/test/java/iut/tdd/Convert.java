@@ -1,8 +1,66 @@
 package iut.tdd;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Convert 
 {
-	public String convert_unite(String input) 
+	public String num2text(String input) 
+	{
+		String areturn="";
+		int input_num= Integer.parseInt(input);
+		if(chifre_unique(input_num))
+		{
+			areturn += this.convert_unique(input);
+		}
+		else if(input_num>=10)
+		{
+			String inpute_disaine = input.substring(input.length()-2,input.length()-1);
+			System.out.print(inpute_disaine);
+			areturn += disaines(inpute_disaine);
+		}
+		
+		return areturn;
+	}
+	
+	public String disaines(String input)
+	{
+		String areturn ="";
+		switch (input) 
+		{
+		case "1":
+			areturn = "dix";
+			break;
+		case "2":
+			areturn = "vingt";
+			break;
+		case "3":
+			areturn = "trent";
+			break;
+		case "4":
+			areturn = "quarente";
+			break;
+		case "5":
+			areturn = "cinquante";
+			break;
+		case "6":
+			areturn = "soixante";
+			break;
+		case "7":
+			areturn = "soixante dix";
+			break;
+		case "8":
+			areturn = "quatre vingt";
+			break;
+		case "9":
+			areturn = "quatre vingt dix";
+			break;
+		}
+		
+		return areturn;
+	}
+	
+	public String convert_unique(String input) 
 	{
 		String areturn ="";
 		switch (input) 
@@ -37,26 +95,59 @@ public class Convert
 		case "9":
 			areturn = "neuf";
 			break;
-
+		
+		case "11":
+			areturn = "onze";
+			break;
+		case "12":
+			areturn = "douze";
+			break;
+		case "13":
+			areturn = "treize";
+			break;
+		case "14":
+			areturn = "quatorze";
+			break;
+		case "15":
+			areturn = "quinze";
+			break;
+		case "16":
+			areturn = "seize";
+			break;
+			
 		default:
 			areturn ="";
 			break;
 		}
 		return areturn;
 	}
-	public String num2text(String input) 
+	
+	/*private String dizaine(String input) 
 	{
-		String areturn="";
-		if(input.length()==1)
-		{
-			areturn += this.convert_unite(input);
-		}
-		else if (input.length()==2) 
-		{
-			return "dix";
-		}
 		
-		return areturn;
-	}
+		return null;
+	}*/
 
+	private boolean chifre_unique(int input_num) 
+	{
+		List<Integer> l =new ArrayList<Integer>();
+		l.add(0);
+		l.add(1);
+		l.add(2);
+		l.add(3);
+		l.add(4);
+		l.add(5);
+		l.add(6);
+		l.add(7);
+		l.add(8);
+		l.add(9);
+		l.add(11);
+		l.add(12);
+		l.add(13);
+		l.add(14);
+		l.add(15);
+		l.add(16);
+		/*91-99*/
+		return l.contains(input_num);
+	}
 }
