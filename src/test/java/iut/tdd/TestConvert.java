@@ -6,7 +6,7 @@ import org.junit.Test;
 public class TestConvert 
 {
 	@Test
-	public void test_num2text_zero () 
+	public void test_num2text_0() 
 	{
 		// Given
 		String input = "0";
@@ -19,7 +19,7 @@ public class TestConvert
 	}
 	
 	@Test
-	public void test_num2text_un () 
+	public void test_num2text_1() 
 	{
 		// Given
 		String input = "1";
@@ -32,7 +32,7 @@ public class TestConvert
 	}
 	
 	@Test
-	public void test_num2text_deux () 
+	public void test_num2text_2() 
 	{
 		// Given
 		String input = "2";
@@ -45,7 +45,7 @@ public class TestConvert
 	}
 	
 	@Test
-	public void test_num2text_trois () 
+	public void test_num2text_3() 
 	{
 		// Given
 		String input = "3";
@@ -58,7 +58,7 @@ public class TestConvert
 	}
 	
 	@Test
-	public void test_num2text_quatre () 
+	public void test_num2text_4() 
 	{
 		// Given
 		String input = "4";
@@ -71,7 +71,7 @@ public class TestConvert
 	}
 	
 	@Test
-	public void test_num2text_cinq () 
+	public void test_num2text_5() 
 	{
 		// Given
 		String input = "5";
@@ -84,7 +84,7 @@ public class TestConvert
 	}
 	
 	@Test
-	public void test_num2text_six () 
+	public void test_num2text_6() 
 	{
 		// Given
 		String input = "6";
@@ -97,7 +97,7 @@ public class TestConvert
 	}
 	
 	@Test
-	public void test_num2text_sept () 
+	public void test_num2text_7() 
 	{
 		// Given
 		String input = "7";
@@ -110,7 +110,7 @@ public class TestConvert
 	}
 	
 	@Test
-	public void test_num2text_huit () 
+	public void test_num2text_8() 
 	{
 		// Given
 		String input = "8";
@@ -123,7 +123,7 @@ public class TestConvert
 	}
 	
 	@Test
-	public void test_num2text_neuf () 
+	public void test_num2text_9() 
 	{
 		// Given
 		String input = "9";
@@ -136,7 +136,7 @@ public class TestConvert
 	}
 	
 	@Test
-	public void test_num2text_dix () 
+	public void test_num2text_10() 
 	{
 		// Given
 		String input = "10";
@@ -149,7 +149,7 @@ public class TestConvert
 	}
 	
 	@Test
-	public void test_num2text_onze() 
+	public void test_num2text_11() 
 	{
 		// Given
 		String input = "11";
@@ -162,7 +162,7 @@ public class TestConvert
 	}
 	
 	@Test
-	public void test_num2text_douze() 
+	public void test_num2text_12() 
 	{
 		// Given
 		String input = "12";
@@ -175,7 +175,7 @@ public class TestConvert
 	}
 	
 	@Test
-	public void test_num2text_treize() 
+	public void test_num2text_13() 
 	{
 		// Given
 		String input = "13";
@@ -188,7 +188,7 @@ public class TestConvert
 	}
 	
 	@Test
-	public void test_num2text_quatorze() 
+	public void test_num2text_14() 
 	{
 		// Given
 		String input = "14";
@@ -201,7 +201,7 @@ public class TestConvert
 	}
 	
 	@Test
-	public void test_num2text_quinze() 
+	public void test_num2text_15() 
 	{
 		// Given
 		String input = "15";
@@ -214,7 +214,7 @@ public class TestConvert
 	}
 	
 	@Test
-	public void test_num2text_seize() 
+	public void test_num2text_16() 
 	{
 		// Given
 		String input = "16";
@@ -226,8 +226,20 @@ public class TestConvert
 		Assert.assertEquals(expected, actual);
 	}
 	
+	public void test_num2text_17() 
+	{
+		// Given
+		String input = "17";
+		String expected = "dix sept";
+		Convert myConvert = new Convert();
+		// When
+		String actual = myConvert.num2text(input);
+		// Then
+		Assert.assertEquals(expected, actual);
+	}
+	
 	@Test
-	public void test_num2text_vingt() 
+	public void test_num2text_20() 
 	{
 		// Given
 		String input = "20";
@@ -240,7 +252,7 @@ public class TestConvert
 	}
 
 	@Test
-	public void test_num2text_trent() 
+	public void test_num2text_30() 
 	{
 		// Given
 		String input = "30";
@@ -253,7 +265,7 @@ public class TestConvert
 	}
 
 	@Test
-	public void test_num2text_quarente() 
+	public void test_num2text_40() 
 	{
 		// Given
 		String input = "40";
@@ -266,7 +278,7 @@ public class TestConvert
 	}
 
 	@Test
-	public void test_num2text_cinquante() 
+	public void test_num2text_50() 
 	{
 		// Given
 		String input = "50";
@@ -279,7 +291,7 @@ public class TestConvert
 	}
 
 	@Test
-	public void test_num2text_soixante() 
+	public void test_num2text_60() 
 	{
 		// Given
 		String input = "60";

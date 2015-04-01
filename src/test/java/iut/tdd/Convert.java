@@ -16,7 +16,6 @@ public class Convert
 		else if(input_num>=10)
 		{
 			String inpute_disaine = input.substring(input.length()-2,input.length()-1);
-			System.out.print(inpute_disaine);
 			areturn += disaines(inpute_disaine);
 		}
 		
