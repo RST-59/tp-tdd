@@ -27,6 +27,8 @@ public class Convert
 			return "huit";
 		case "9":
 			return "neuf";
+		case "10":
+			return "dix";
 
 		default:
 			return null;

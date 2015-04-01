@@ -135,4 +135,17 @@ public class TestConvert
 		Assert.assertEquals(expected, actual);
 	}
 	
+	@Test
+	public void test_num2text_dix () 
+	{
+		// Given
+		String input = "10";
+		String expected = "dix";
+		Convert myConvert = new Convert();
+		// When
+		String actual = myConvert.num2text(input);
+		// Then
+		Assert.assertEquals(expected, actual);
+	}
+	
 }
