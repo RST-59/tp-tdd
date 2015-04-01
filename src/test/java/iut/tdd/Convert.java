@@ -2,8 +2,7 @@ package iut.tdd;
 
 public class Convert 
 {
-
-	public String num2text(String input) 
+	public String convert_unite(String input) 
 	{
 		String areturn ="";
 		switch (input) 
@@ -38,14 +37,25 @@ public class Convert
 		case "9":
 			areturn = "neuf";
 			break;
-		case "10":
-			areturn = "dix";
-			break;
 
 		default:
 			areturn ="";
 			break;
 		}
+		return areturn;
+	}
+	public String num2text(String input) 
+	{
+		String areturn="";
+		if(input.length()==1)
+		{
+			areturn += this.convert_unite(input);
+		}
+		else if (input.length()==2) 
+		{
+			return "dix";
+		}
+		
 		return areturn;
 	}
 
