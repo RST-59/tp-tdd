@@ -366,6 +366,21 @@ public class TestConvert
 		// When
 		String actual = myConvert.num2text(input);
 		// Then
+		System.out.println(actual);
+		Assert.assertEquals(expected, actual);
+	}
+	
+	@Test
+	public void test_num2text_71() 
+	{
+		// Given
+		String input = "71";
+		String expected = "soixante et onze ";
+		Convert myConvert = new Convert();
+		// When
+		String actual = myConvert.num2text(input);
+		// Then
+		System.out.println(actual);
 		Assert.assertEquals(expected, actual);
 	}
 
@@ -392,6 +407,21 @@ public class TestConvert
 		// When
 		String actual = myConvert.num2text(input);
 		// Then
+		System.out.println(actual);
+		Assert.assertEquals(expected, actual);
+	}
+	
+	@Test
+	public void test_num2text_93() 
+	{
+		// Given
+		String input = "93";
+		String expected = "quatre vingt treize ";
+		Convert myConvert = new Convert();
+		// When
+		String actual = myConvert.num2text(input);
+		// Then
+		System.out.println(actual);
 		Assert.assertEquals(expected, actual);
 	}
 	

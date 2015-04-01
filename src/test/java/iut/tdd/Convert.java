@@ -17,9 +17,16 @@ public class Convert
 		{
 			String inpute_disaine = input.substring(input.length()-2,input.length()-1);
 			areturn += disaines(inpute_disaine);
-			
-			String inpute_unite = input.substring(input.length()-1,input.length());
-			areturn += unite(inpute_unite);
+			if(!inpute_disaine.equals("7") && !inpute_disaine.equals("9") )
+			{
+				String inpute_unite = input.substring(input.length()-1,input.length());
+				areturn += unite(inpute_unite);
+			}
+			else
+			{
+				String inpute_unite = input.substring(input.length()-1,input.length());
+				areturn += disaines(inpute_unite);
+			}
 		}
 		
 		return areturn;
