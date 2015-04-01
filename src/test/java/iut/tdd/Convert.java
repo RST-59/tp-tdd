@@ -5,34 +5,48 @@ public class Convert
 
 	public String num2text(String input) 
 	{
+		String areturn ="";
 		switch (input) 
 		{
 		case "0":
-			return "zéro";
+			areturn = "zéro";
+			break;
 		case "1":
-			return "un";
+			areturn = "un";
+			break;
 		case "2":
-			return "deux";
+			areturn = "deux";
+			break;
 		case "3":
-			return "trois";
+			areturn = "trois";
+			break;
 		case "4":
-			return "quatre";
+			areturn = "quatre";
+			break;
 		case "5":
-			return "cinq";
+			areturn = "cinq";
+			break;
 		case "6":
-			return "six";
+			areturn = "six";
+			break;
 		case "7":
-			return "sept";
+			areturn = "sept";
+			break;
 		case "8":
-			return "huit";
+			areturn = "huit";
+			break;
 		case "9":
-			return "neuf";
+			areturn = "neuf";
+			break;
 		case "10":
-			return "dix";
+			areturn = "dix";
+			break;
 
 		default:
-			return null;
+			areturn ="";
+			break;
 		}
+		return areturn;
 	}
 
 }
