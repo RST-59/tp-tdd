@@ -17,11 +17,51 @@ public class Convert
 		{
 			String inpute_disaine = input.substring(input.length()-2,input.length()-1);
 			areturn += disaines(inpute_disaine);
+			
+			String inpute_unite = input.substring(input.length()-1,input.length());
+			areturn += unite(inpute_unite);
 		}
 		
 		return areturn;
 	}
 	
+	private String unite(String input) 
+	{
+		String areturn ="";
+		switch (input) 
+		{
+		case "1":
+			areturn = "et un";
+			break;
+		case "2":
+			areturn = "deux";
+			break;
+		case "3":
+			areturn = "trois";
+			break;
+		case "4":
+			areturn = "quatre";
+			break;
+		case "5":
+			areturn = "cinq";
+			break;
+		case "6":
+			areturn = "six";
+			break;
+		case "7":
+			areturn = "sept";
+			break;
+		case "8":
+			areturn = "huit";
+			break;
+		case "9":
+			areturn = "neuf";
+			break;
+		}
+		
+		return areturn;
+	}
+
 	public String disaines(String input)
 	{
 		String areturn ="";
@@ -56,7 +96,7 @@ public class Convert
 			break;
 		}
 		
-		return areturn;
+		return areturn+" ";
 	}
 	
 	public String convert_unique(String input) 
@@ -118,14 +158,8 @@ public class Convert
 			areturn ="";
 			break;
 		}
-		return areturn;
+		return areturn+" ";
 	}
-	
-	/*private String dizaine(String input) 
-	{
-		
-		return null;
-	}*/
 
 	private boolean chifre_unique(int input_num) 
 	{
@@ -146,7 +180,6 @@ public class Convert
 		l.add(14);
 		l.add(15);
 		l.add(16);
-		/*91-99*/
 		return l.contains(input_num);
 	}
 }

@@ -10,7 +10,7 @@ public class TestConvert
 	{
 		// Given
 		String input = "0";
-		String expected = "zéro";
+		String expected = "zéro ";
 		Convert myConvert = new Convert();
 		// When
 		String actual = myConvert.num2text(input);
@@ -23,7 +23,7 @@ public class TestConvert
 	{
 		// Given
 		String input = "1";
-		String expected = "un";
+		String expected = "un ";
 		Convert myConvert = new Convert();
 		// When
 		String actual = myConvert.num2text(input);
@@ -36,7 +36,7 @@ public class TestConvert
 	{
 		// Given
 		String input = "2";
-		String expected = "deux";
+		String expected = "deux ";
 		Convert myConvert = new Convert();
 		// When
 		String actual = myConvert.num2text(input);
@@ -49,7 +49,7 @@ public class TestConvert
 	{
 		// Given
 		String input = "3";
-		String expected = "trois";
+		String expected = "trois ";
 		Convert myConvert = new Convert();
 		// When
 		String actual = myConvert.num2text(input);
@@ -62,7 +62,7 @@ public class TestConvert
 	{
 		// Given
 		String input = "4";
-		String expected = "quatre";
+		String expected = "quatre ";
 		Convert myConvert = new Convert();
 		// When
 		String actual = myConvert.num2text(input);
@@ -75,7 +75,7 @@ public class TestConvert
 	{
 		// Given
 		String input = "5";
-		String expected = "cinq";
+		String expected = "cinq ";
 		Convert myConvert = new Convert();
 		// When
 		String actual = myConvert.num2text(input);
@@ -88,7 +88,7 @@ public class TestConvert
 	{
 		// Given
 		String input = "6";
-		String expected = "six";
+		String expected = "six ";
 		Convert myConvert = new Convert();
 		// When
 		String actual = myConvert.num2text(input);
@@ -101,7 +101,7 @@ public class TestConvert
 	{
 		// Given
 		String input = "7";
-		String expected = "sept";
+		String expected = "sept ";
 		Convert myConvert = new Convert();
 		// When
 		String actual = myConvert.num2text(input);
@@ -114,7 +114,7 @@ public class TestConvert
 	{
 		// Given
 		String input = "8";
-		String expected = "huit";
+		String expected = "huit ";
 		Convert myConvert = new Convert();
 		// When
 		String actual = myConvert.num2text(input);
@@ -127,7 +127,7 @@ public class TestConvert
 	{
 		// Given
 		String input = "9";
-		String expected = "neuf";
+		String expected = "neuf ";
 		Convert myConvert = new Convert();
 		// When
 		String actual = myConvert.num2text(input);
@@ -140,7 +140,7 @@ public class TestConvert
 	{
 		// Given
 		String input = "10";
-		String expected = "dix";
+		String expected = "dix ";
 		Convert myConvert = new Convert();
 		// When
 		String actual = myConvert.num2text(input);
@@ -153,7 +153,7 @@ public class TestConvert
 	{
 		// Given
 		String input = "11";
-		String expected = "onze";
+		String expected = "onze ";
 		Convert myConvert = new Convert();
 		// When
 		String actual = myConvert.num2text(input);
@@ -166,7 +166,7 @@ public class TestConvert
 	{
 		// Given
 		String input = "12";
-		String expected = "douze";
+		String expected = "douze ";
 		Convert myConvert = new Convert();
 		// When
 		String actual = myConvert.num2text(input);
@@ -179,7 +179,7 @@ public class TestConvert
 	{
 		// Given
 		String input = "13";
-		String expected = "treize";
+		String expected = "treize ";
 		Convert myConvert = new Convert();
 		// When
 		String actual = myConvert.num2text(input);
@@ -192,7 +192,7 @@ public class TestConvert
 	{
 		// Given
 		String input = "14";
-		String expected = "quatorze";
+		String expected = "quatorze ";
 		Convert myConvert = new Convert();
 		// When
 		String actual = myConvert.num2text(input);
@@ -205,7 +205,7 @@ public class TestConvert
 	{
 		// Given
 		String input = "15";
-		String expected = "quinze";
+		String expected = "quinze ";
 		Convert myConvert = new Convert();
 		// When
 		String actual = myConvert.num2text(input);
@@ -218,7 +218,7 @@ public class TestConvert
 	{
 		// Given
 		String input = "16";
-		String expected = "seize";
+		String expected = "seize ";
 		Convert myConvert = new Convert();
 		// When
 		String actual = myConvert.num2text(input);
@@ -226,6 +226,7 @@ public class TestConvert
 		Assert.assertEquals(expected, actual);
 	}
 	
+	@Test
 	public void test_num2text_17() 
 	{
 		// Given
@@ -239,11 +240,37 @@ public class TestConvert
 	}
 	
 	@Test
+	public void test_num2text_18() 
+	{
+		// Given
+		String input = "18";
+		String expected = "dix huit";
+		Convert myConvert = new Convert();
+		// When
+		String actual = myConvert.num2text(input);
+		// Then
+		Assert.assertEquals(expected, actual);
+	}
+	
+	@Test
 	public void test_num2text_20() 
 	{
 		// Given
 		String input = "20";
-		String expected = "vingt";
+		String expected = "vingt ";
+		Convert myConvert = new Convert();
+		// When
+		String actual = myConvert.num2text(input);
+		// Then
+		Assert.assertEquals(expected, actual);
+	}
+	
+	@Test
+	public void test_num2text_22() 
+	{
+		// Given
+		String input = "22";
+		String expected = "vingt deux";
 		Convert myConvert = new Convert();
 		// When
 		String actual = myConvert.num2text(input);
@@ -256,7 +283,20 @@ public class TestConvert
 	{
 		// Given
 		String input = "30";
-		String expected = "trent";
+		String expected = "trent ";
+		Convert myConvert = new Convert();
+		// When
+		String actual = myConvert.num2text(input);
+		// Then
+		Assert.assertEquals(expected, actual);
+	}
+	
+	@Test
+	public void test_num2text_35() 
+	{
+		// Given
+		String input = "35";
+		String expected = "trent cinq";
 		Convert myConvert = new Convert();
 		// When
 		String actual = myConvert.num2text(input);
@@ -269,7 +309,20 @@ public class TestConvert
 	{
 		// Given
 		String input = "40";
-		String expected = "quarente";
+		String expected = "quarente ";
+		Convert myConvert = new Convert();
+		// When
+		String actual = myConvert.num2text(input);
+		// Then
+		Assert.assertEquals(expected, actual);
+	}
+	
+	@Test
+	public void test_num2text_41() 
+	{
+		// Given
+		String input = "41";
+		String expected = "quarente et un";
 		Convert myConvert = new Convert();
 		// When
 		String actual = myConvert.num2text(input);
@@ -282,7 +335,7 @@ public class TestConvert
 	{
 		// Given
 		String input = "50";
-		String expected = "cinquante";
+		String expected = "cinquante ";
 		Convert myConvert = new Convert();
 		// When
 		String actual = myConvert.num2text(input);
@@ -295,7 +348,7 @@ public class TestConvert
 	{
 		// Given
 		String input = "60";
-		String expected = "soixante";
+		String expected = "soixante ";
 		Convert myConvert = new Convert();
 		// When
 		String actual = myConvert.num2text(input);
@@ -308,7 +361,7 @@ public class TestConvert
 	{
 		// Given
 		String input = "70";
-		String expected = "soixante dix";
+		String expected = "soixante dix ";
 		Convert myConvert = new Convert();
 		// When
 		String actual = myConvert.num2text(input);
@@ -321,7 +374,7 @@ public class TestConvert
 	{
 		// Given
 		String input = "80";
-		String expected = "quatre vingt";
+		String expected = "quatre vingt ";
 		Convert myConvert = new Convert();
 		// When
 		String actual = myConvert.num2text(input);
@@ -334,7 +387,7 @@ public class TestConvert
 	{
 		// Given
 		String input = "90";
-		String expected = "quatre vingt dix";
+		String expected = "quatre vingt dix ";
 		Convert myConvert = new Convert();
 		// When
 		String actual = myConvert.num2text(input);
